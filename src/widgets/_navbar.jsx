@@ -5,9 +5,16 @@ import { Badge, Brand, Links, Links2, Nav } from "../styles/navbar.sct";
 import { LinkBtn } from "../styles/global.stc";
 import Flag from '../images/flag.png'
 
-const _navbar = () => {
+const Navbar = () => {
   return (
     <Nav>
+      <div style={{
+        width: '100%',
+        height: '20px',
+        background: '#000',
+        color: '#fff',
+        textAlign: 'center'
+      }}>IN DEVELOPMENT</div>
       <div className="container h-100">
         <div className="container flex between w-100 h-100">
           <Brand href="/">{site_data.name}</Brand>
@@ -39,4 +46,4 @@ const _navbar = () => {
   );
 };
 
-export default _navbar;
+export default Navbar;
