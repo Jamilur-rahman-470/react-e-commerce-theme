@@ -1,4 +1,4 @@
-import React, { createRef, useEffect } from "react";
+import React, { createRef } from "react";
 import { Slider } from "../styles/feature-card.stc";
 import { site_data } from "../data/site-data";
 import TinySlider from "tiny-slider-react";
