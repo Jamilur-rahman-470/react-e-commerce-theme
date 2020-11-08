@@ -28,16 +28,16 @@ const Navbar = () => {
           </Links>
           <Links2>
             <li>
-              <a href="#">Offer</a>
+              <a href="/">Offer</a>
             </li>
             <li>
-              <a href="#">Need Help</a>
+              <a href="/">Need Help</a>
             </li>
             <li>
               <Badge> <img src={Flag} alt="EN" width='20'style={{marginRight: '5px'}}/> EN</Badge>
             </li>
             <li>
-              <LinkBtn href="#" style={{color: '#fff'}}>JOIN</LinkBtn>
+              <LinkBtn href="/" style={{color: '#fff'}}>JOIN</LinkBtn>
             </li>
           </Links2>
         </div>
