@@ -34,11 +34,10 @@ jobs:
           yarn run build --if-present
           
       - name: Deploy to netlify
-        uses: netlify/actions/cli@master 
-        env: 
-            NETLIFY_SITE_ID: ${{secrets.NETLIFY_SITE_ID}}
-            NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_AUTH_TOKEN}}
+        uses: jsmrcaga/action-netlify-deploy@master 
         with: 
-          args: deploy --dir=build --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+            NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_AUTH_TOKEN}}
+            NETLIFY_SITE_ID: ${{secrets.NETLIFY_SITE_ID}}
+            NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
+            NETLIFY_DEPLOY_TO_PROD: true
           
