@@ -26,7 +26,6 @@ const FeatureCard = () => {
   let ref = createRef();
   return (
     <div className="my-5">
-      help me
       <div className="container">
         <Slider>
           <div className="slider-btns">

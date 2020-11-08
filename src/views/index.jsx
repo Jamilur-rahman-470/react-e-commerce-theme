@@ -8,6 +8,7 @@ const Home = () => {
    return (
         <Page>
             <HomeBanner/>
+            <h1>HELO</h1>
             <FeatureCard/>
         </Page>
     )
